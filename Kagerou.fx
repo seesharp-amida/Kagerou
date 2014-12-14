@@ -132,7 +132,7 @@ float4x4 ViewMatrixInverse : VIEWINVERSE;
 float time_0_X : Time;
 
 // 乱数処理
-#include "./random.fx"
+#include "./random/mme.fx"
 // ソフトパーティクルエンジン対応
 #include "./softparticle.fx"
 // ユーティリティ
