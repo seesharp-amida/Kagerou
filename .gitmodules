@@ -1,3 +1,6 @@
 [submodule "random"]
 	path = random
 	url = https://github.com/seesharp-amida/random.git
+[submodule "util"]
+	path = util
+	url = https://github.com/seesharp-amida/util.git

@@ -136,7 +136,7 @@ float time_0_X : Time;
 // ソフトパーティクルエンジン対応
 #include "./softparticle.fx"
 // ユーティリティ
-#include "./util.fx"
+#include "./util/mme.fx"
 
 // スクリーンサイズ
 float2 ViewportSize : VIEWPORTPIXELSIZE;
@@ -478,19 +478,6 @@ float ClearDepth  = 1.0;
 technique FireParticleSystem <
     string Script = 
       
-      "RenderColorTarget0=ParticleBaseTex;"
-      "RenderDepthStencilTarget=ParticleBaseDepthBuffer;"
-      "ClearSetColor=ClearColor;"
-      "ClearSetDepth=ClearDepth;"
-      "Pass=ParticleBase;"
-	    
-      "RenderColorTarget0=ParticleBaseTex2;"
-      "ClearSetColor=ClearColor;"
-      "ClearSetDepth=ClearDepth;"
-      "Clear=Color;"
-      "Clear=Depth;"
-      "Pass=ParticleBase2;"
-	    
       "RenderColorTarget0=ScnMap;"
       "RenderDepthStencilTarget=DepthBuffer;"
       "ClearSetColor=ClearColor; ClearSetDepth=ClearDepth;"
